@@ -14,7 +14,7 @@ This lesson will introduce you to shotgun and how to use it with Sinatra apps. W
 
 ## Setup
 
-Make sure you run `bundle install` to install the gems in our `Gemfile`. If your operating system is OSX El Capitan, and you have an issue installing `EventMachine`, first check to make sure Open SSL is installed by entering `brew install openssl` in terminal. Once it's installed, enter `brew link openssl --force`.
+Make sure you run `bundle install` to install the gems in our `Gemfile`. If your operating system is OSX El Capitan and you have an issue installing `EventMachine`, run the following command: `gem install eventmachine -- --with-cppflags=-I/usr/local/opt/openssl/include`.
 
 ## Why shotgun
 
@@ -153,6 +153,5 @@ Listening on 127.0.0.1:4200, CTRL+C to stop
 ```
 
 You'll notice the server started on port `4200` which is hopefully unoccupied. You can supply any port number. But it's best to terminate your servers rather than just start 100s on different ports.
-
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-shotgun-server'>Using the Shotgun Development Server</a> on Learn.co and start learning to code for free.</p>
