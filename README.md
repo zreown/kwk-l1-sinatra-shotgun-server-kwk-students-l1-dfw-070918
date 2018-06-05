@@ -33,7 +33,8 @@ up a Rack server. You should see something like this:
 <img src="https://s3.amazonaws.com/learn-verified/rackup.png">
 
 Pay attention to the line that says `Listening on localhost:9292`.
-`localhost:9292` is the url you want to enter in the browser. If you are in the
+The port will not be numbered as such since the Learn IDE is not local, but the URL
+ it gives you is the url you want to enter in the browser. If you are in the
 Learn IDE, you will see a different address — [here's an explanatory Help Center
 article](http://help.learn.co/the-learn-ide/common-ide-questions/accessing-localhost-in-the-learn-ide).
 Go ahead and copy and paste that into the browser. You should see `Welcome to
@@ -100,7 +101,7 @@ That means your application is loaded and being served from port `9393`, the
 default Shotgun port. The application will respond to requests at
 `http://127.0.0.1:9393` or, more commonly, `localhost:9393` and will reload your
 code on every request until the process is terminated by typing `CTRL+C`. Go
-ahead and visit `localhost:9393` in the browser.
+ahead and visit `localhost:9393`, or the URL given in the Learn IDE.
 
 A port is just an endpoint on the server that is open for communication. It's
 typical for a server to regulate the open ports to make sure it can monitor
@@ -174,7 +175,7 @@ $ bundle exec shotgun
 
 ### port in use
 
-You also might get an error about a port being in use. It'll look like this:
+While unlikely, you also might get an error about a port being in use. It'll look like this:
 
 ```
 $ shotgun
